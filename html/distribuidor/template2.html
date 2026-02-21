@@ -1,0 +1,112 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+  }
+  .firma {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Centrado vertical */
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px;
+    border-top: 2px solid #eee;
+  }
+  .firma img {
+    max-width: 250px;
+    margin-right: 20px;
+  }
+  .firma div {
+    font-size: 14px;
+  }
+  a {
+    color: #0563c1;
+    text-decoration: none;
+  }
+  .eco {
+    text-align: center;
+    font-size: 12px;
+    color: #0c882a;
+    margin-top: 20px;
+    font-style: italic;
+  }
+</style>
+<body>
+  <p>Estimado(a) <b>{{ cliente }}</b>,</p>
+
+  <p>
+    Reciba un cordial saludo. Mi nombre es <b>Nicolás Bernal</b> y me permito
+    presentarle a <b>JD Eléctricos e Industria LTDA</b>, empresa colombiana con
+    amplia experiencia en la importación y comercialización de soluciones
+    eléctricas para proyectos de <b>baja, media y alta tensión</b>.
+  </p>
+
+  <p>
+    Somos creadores de la marca <b>JAPS</b> y representantes exclusivos en
+    Colombia de la marca brasilera <b>INCESA</b>, ofreciendo productos que
+    cumplen con altos estándares de calidad y confiabilidad.
+  </p>
+
+  <p>Entre nuestros principales diferenciales se encuentran:</p>
+
+  <ul>
+    <li>Disponibilidad permanente de inventario.</li>
+    <li>Precios competitivos y excelente respaldo técnico.</li>
+    <li>Despachos ágiles a nivel nacional.</li>
+  </ul>
+
+  <p>
+    Queremos ser su proveedor de confianza y acompañarlo en el desarrollo de
+    sus proyectos eléctricos, brindando asesoría y soluciones oportunas.
+  </p>
+
+  <p>
+    Adjuntamos nuestro <b>Brochure corporativo</b> para que pueda conocer en
+    detalle nuestro portafolio.
+  </p>
+
+  <p>
+    Estaremos atentos para coordinar una <b>reunión comercial</b> y conversar
+    sobre cómo podemos trabajar en conjunto.
+  </p>
+
+  <p>
+    <b>
+      Quedamos atentos a su amable respuesta para programar una visita.
+    </b>
+  </p>
+
+  <p>
+    Cordialmente,<br />
+    <b>Nicolás Bernal</b><br />
+    <b>JD Eléctricos e Industria LTDA</b>
+  </p>
+
+  <div class="firma">
+    <img
+      src="https://ik.imagekit.io/ftuu3w4hn/cards-home/firma-imagen.png"
+      width="236"
+      height="192"
+      alt="Logo JD Eléctricos"
+    />
+    <div>
+      <b>{{ asesor }}</b><br />
+      <b>J.D Eléctricos e Industria Ltda.</b><br /><br />
+      📧 <b>Email:</b>
+      <a href="mailto:{{ correo-asesor }}">{{ correoAsesor }}</a><br />
+      📱 <b>Celular:</b> (+57) {{ numeroAsesor }}<br />
+      📞 <b>PBX:</b> (1) 341 10 60<br /><br />
+      🏢 <b>Dirección:</b><br />
+      Carrera 12 # 15-95, Ofc 506<br />
+      Bogotá - Colombia<br /><br />
+      🌐 <b>Sitios web:</b><br />
+      <a href="http://www.jdelectricos.com.co/">www.jdelectricos.com.co</a><br />
+      <a href="http://www.japs.com.co/">www.japs.com.co</a>
+    </div>
+  </div>
+
+  <p class="eco">
+    <b>¡Hazlo por el planeta! Antes de imprimir, considera si es esencial.</b>
+  </p>
+</body>

@@ -1,0 +1,101 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+  }
+  .firma {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px;
+    border-top: 2px solid #eee;
+  }
+  .firma img {
+    max-width: 250px;
+    margin-right: 20px;
+  }
+  .firma div {
+    font-size: 14px;
+  }
+  a {
+    color: #0563c1;
+    text-decoration: none;
+  }
+  .eco {
+    text-align: center;
+    font-size: 12px;
+    color: #0c882a;
+    margin-top: 20px;
+    font-style: italic;
+  }
+</style>
+<body>
+  <p>Estimado(a) <b>{{ cliente }}</b>,</p>
+
+  <p>
+    Reciba un cordial saludo. Desde <b>JD Eléctricos e Industria LTDA</b> queremos
+    presentarnos como una empresa especializada en el suministro de material
+    eléctrico para proyectos de <b>baja, media y alta tensión</b>.
+  </p>
+
+  <p>
+    Contamos con más de <b>16 años de experiencia</b> en el mercado colombiano,
+    brindando soluciones confiables y oportunas a constructoras, contratistas,
+    industrias y empresas del sector eléctrico.
+  </p>
+
+  <p>Entre nuestros principales beneficios encontrará:</p>
+
+  <ul>
+    <li>Precios competitivos y excelente relación costo-beneficio.</li>
+    <li>Disponibilidad permanente de inventario.</li>
+    <li>Despachos ágiles a nivel nacional.</li>
+    <li>Acompañamiento técnico y asesoría personalizada.</li>
+  </ul>
+
+  <p>
+    Nos gustaría tener la oportunidad de cotizar sus próximos requerimientos y
+    demostrarle por qué somos un proveedor confiable para múltiples empresas del sector.
+  </p>
+
+  <p>
+    <b>Quedamos atentos a su respuesta para iniciar una relación comercial exitosa.</b>
+  </p>
+
+  <p>
+    Cordialmente,<br />
+    <b>Nicolás Bernal</b><br />
+    <b>JD Eléctricos e Industria LTDA</b>
+  </p>
+
+  <!-- Firma -->
+  <div class="firma">
+    <img
+      src="https://ik.imagekit.io/ftuu3w4hn/cards-home/firma-imagen.png"
+      width="236"
+      height="192"
+      alt="Logo JD Eléctricos"
+    />
+    <div>
+      <b>{{ asesor }}</b><br />
+      <b>J.D Eléctricos e Industria Ltda.</b><br /><br />
+      📧 <b>Email:</b>
+      <a href="mailto:{{ correo-asesor }}">{{ correoAsesor }}</a><br />
+      📱 <b>Celular:</b> (+57) {{ numeroAsesor }}<br />
+      📞 <b>PBX:</b> (1) 341 10 60<br /><br />
+      🏢 <b>Dirección:</b><br />
+      Carrera 12 # 15-95, Ofc 506<br />
+      Bogotá - Colombia<br /><br />
+      🌐 <b>Sitios web:</b><br />
+      <a href="http://www.jdelectricos.com.co/">www.jdelectricos.com.co</a><br />
+      <a href="http://www.japs.com.co/">www.japs.com.co</a>
+    </div>
+  </div>
+
+  <p class="eco">
+    <b>¡Hazlo por el planeta! Antes de imprimir, considera si es esencial.</b>
+  </p>
+</body>

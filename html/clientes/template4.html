@@ -1,0 +1,95 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.5;
+  }
+  .firma {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    background: #fff;
+    padding: 15px;
+    border-top: 2px solid #eee;
+  }
+  .firma img {
+    max-width: 250px;
+    margin-right: 20px;
+  }
+  .firma div {
+    font-size: 14px;
+  }
+  a {
+    color: #0563c1;
+    text-decoration: none;
+  }
+  .eco {
+    text-align: center;
+    font-size: 12px;
+    color: #0c882a;
+    margin-top: 20px;
+    font-style: italic;
+  }
+</style>
+<body>
+  <p>Estimado(a) <b>{{ cliente }}</b>,</p>
+
+  <p>
+    Es un placer saludarle. Adjuntamos la información solicitada junto con nuestro
+    portafolio de productos eléctricos para su revisión.
+  </p>
+
+  <p>
+    En <b>JD Eléctricos e Industria LTDA</b> nos especializamos en ofrecer soluciones
+    integrales para proyectos eléctricos, garantizando calidad, cumplimiento y respaldo.
+  </p>
+
+  <p>
+    Estamos en capacidad de suministrar materiales para instalaciones de baja,
+    media y alta tensión, adaptándonos a las especificaciones técnicas de cada proyecto.
+  </p>
+
+  <p>
+    Si requiere alguna aclaración, ajuste en la cotización o asesoría técnica
+    adicional, con gusto estaremos atentos para apoyarle de manera inmediata.
+  </p>
+
+  <p>
+    <b>Agradecemos la oportunidad de participar en su proceso y quedamos atentos a sus comentarios.</b>
+  </p>
+
+  <p>
+    Cordialmente,<br />
+    <b>Nicolás Bernal</b><br />
+    <b>JD Eléctricos e Industria LTDA</b>
+  </p>
+
+  <!-- Firma -->
+  <div class="firma">
+    <img
+      src="https://ik.imagekit.io/ftuu3w4hn/cards-home/firma-imagen.png"
+      width="236"
+      height="192"
+      alt="Logo JD Eléctricos"
+    />
+    <div>
+      <b>{{ asesor }}</b><br />
+      <b>J.D Eléctricos e Industria Ltda.</b><br /><br />
+      📧 <b>Email:</b>
+      <a href="mailto:{{ correo-asesor }}">{{ correoAsesor }}</a><br />
+      📱 <b>Celular:</b> (+57) {{ numeroAsesor }}<br />
+      📞 <b>PBX:</b> (1) 341 10 60<br /><br />
+      🏢 <b>Dirección:</b><br />
+      Carrera 12 # 15-95, Ofc 506<br />
+      Bogotá - Colombia<br /><br />
+      🌐 <b>Sitios web:</b><br />
+      <a href="http://www.jdelectricos.com.co/">www.jdelectricos.com.co</a><br />
+      <a href="http://www.japs.com.co/">www.japs.com.co</a>
+    </div>
+  </div>
+
+  <p class="eco">
+    <b>¡Hazlo por el planeta! Antes de imprimir, considera si es esencial.</b>
+  </p>
+</body>
