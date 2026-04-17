@@ -195,7 +195,7 @@ else:
 reporte_texto = "\n".join(reporte)
 
 mail_reporte = outlook.CreateItem(0)
-mail_reporte.To = "asistente1@jdelectricos.com.co"
+mail_reporte.To = "nicolasbernal@jdelectricos.com.co"
 mail_reporte.Subject = "Reporte envío correos"
 mail_reporte.Body = reporte_texto
 mail_reporte.Send()
