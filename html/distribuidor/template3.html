@@ -7,7 +7,7 @@
   .firma {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; /* Centrado vertical */
     margin-top: 20px;
     background: #fff;
     padding: 15px;
@@ -33,48 +33,86 @@
   }
 </style>
 <body>
-  <p>Estimado(a) <b>{{ cliente }}</b>,</p>
+  <p>Estimado distribuidor,</p>
+
+  <p>Reciba un cordial saludo.</p>
 
   <p>
-    Es un placer saludarle. Desde <b>JD Eléctricos e Industria LTDA</b> queremos
-    presentarnos como una empresa especializada en soluciones eléctricas con
-    más de <b>16 años de experiencia</b> en el mercado colombiano.
+    Por medio de este correo queremos informarle que hemos incorporado a nuestro
+    portafolio los <b>espaciadores poliméricos para red ecológica</b>,
+    disponibles para aplicaciones en <b>15 kV y 35 kV</b>.
   </p>
 
   <p>
-    Contamos con un amplio portafolio bajo nuestra marca <b>JAPS</b> y somos
-    representantes en Colombia de la reconocida marca <b>INCESA</b>, ofreciendo
-    productos confiables y certificados.
+    Estos elementos son utilizados en redes ecológicas para mantener la
+    separación entre conductores, contribuyendo a la estabilidad mecánica de la
+    instalación y al adecuado desempeño de la red.
+  </p>
+
+  <p>
+    Dentro de sus características generales se destacan su resistencia,
+    durabilidad, facilidad de instalación y desempeño frente a condiciones
+    ambientales propias de este tipo de aplicaciones.
+  </p>
+
+  <p>
+    Las referencias ya se encuentran disponibles para consulta y solicitud
+    comercial. Puede revisar la información del producto en los siguientes
+    enlaces:
   </p>
 
   <ul>
-    <li>Material eléctrico certificado y garantizado.</li>
-    <li>Asesoría técnica especializada.</li>
-    <li>Cobertura y logística eficiente a nivel nacional.</li>
+    <li>
+      <a href="https://www.japs.com.co/espaciadores" target="_blank">
+        Categoría de espaciadores
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.japs.com.co/espaciadores/espaciador-polimerico-15-kv"
+        target="_blank"
+      >
+        Espaciador polimérico 15 kV
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.japs.com.co/espaciadores/espaciador-polimerico-35-kv"
+        target="_blank"
+      >
+        Espaciador polimérico 35 kV
+      </a>
+    </li>
   </ul>
 
   <p>
-    Nuestro compromiso es aportar valor a cada proyecto, brindando respaldo,
-    calidad y cumplimiento.
+    En caso de requerir ficha técnica, precio, disponibilidad o condiciones de
+    entrega, estaremos atentos para brindarle acompañamiento a través de su
+    asesor comercial.
   </p>
 
   <p>
-    Le compartimos nuestro <b>Brochure</b> para su revisión y quedamos atentos
-    para coordinar una reunión en la que podamos conocer sus requerimientos.
-  </p>
-
-  <p>
-    <b>
-      Será un gusto agendar una visita en el momento que usted disponga.
-    </b>
+    Agradecemos su atención y la confianza depositada en nuestro portafolio.
   </p>
 
   <p>
     Cordialmente,<br />
-    <b>Nicolás Bernal</b><br />
-    <b>JD Eléctricos e Industria LTDA</b>
+    <b>{{ asesor }}</b><br />
+    <b>JD Eléctricos e Industria SAS</b>
   </p>
 
+  <div style="text-align: center; margin: 22px 0 20px 0;">
+    <a href="https://www.japs.com.co/espaciadores" target="_blank">
+      <img
+        src="https://staging.jdelectricos.com.co/wp-content/uploads/2026/05/promocion-espaciadores.webp"
+        alt="Espaciadores para red ecológica 15 y 35 kV"
+        width="650"
+        style="display: block; width: 100%; max-width: 650px; height: auto; margin: 0 auto; border-radius: 10px; border: 0;"
+      />
+    </a>
+  </div>
+
+  <!-- Firma -->
   <div class="firma">
     <img
       src="https://ik.imagekit.io/ftuu3w4hn/cards-home/firma-imagen.png"
@@ -84,7 +122,7 @@
     />
     <div>
       <b>{{ asesor }}</b><br />
-      <b>J.D Eléctricos e Industria Ltda.</b><br /><br />
+      <b>J.D Eléctricos e Industria sas.</b><br /><br />
       📧 <b>Email:</b>
       <a href="mailto:{{ correo-asesor }}">{{ correoAsesor }}</a><br />
       📱 <b>Celular:</b> (+57) {{ numeroAsesor }}<br />
@@ -93,11 +131,11 @@
       Carrera 12 # 15-95, Ofc 506<br />
       Bogotá - Colombia<br /><br />
       🌐 <b>Sitios web:</b><br />
-      <a href="http://www.jdelectricos.com.co/">www.jdelectricos.com.co</a><br />
+      <a href="http://www.jdelectricos.com.co/">www.jdelectricos.com.co</a
+      ><br />
       <a href="http://www.japs.com.co/">www.japs.com.co</a>
     </div>
   </div>
-
   <p class="eco">
     <b>¡Hazlo por el planeta! Antes de imprimir, considera si es esencial.</b>
   </p>

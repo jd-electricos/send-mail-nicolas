@@ -26,9 +26,9 @@ data_path = os.path.join(DATA_DIR, "data.json")
 SUBJECT_CLIENTES_PATH = os.path.join(DATA_DIR, "subject-clientes.json")
 SUBJECT_DISTRIB_PATH = os.path.join(DATA_DIR, "subject-distribuidores.json")
 
-# PDFs por rol
-PDF_CLIENTES = os.path.join(PDF_DIR, "JD-JAPS-CATALOGO.pdf")
-PDF_DISTRIB = os.path.join(PDF_DIR, "brochure-jd-japs.pdf")
+# # PDFs por rol
+# PDF_CLIENTES = os.path.join(PDF_DIR, "JD-JAPS-CATALOGO.pdf")
+# PDF_DISTRIB = os.path.join(PDF_DIR, "brochure-jd-japs.pdf")
 
 # ------------------------------
 # Cargar data asesor
@@ -113,21 +113,21 @@ for persona in registros:
     if rol == "cliente":
         templates = templates_clientes
         subjects = subjects_clientes
-        pdf_path = PDF_CLIENTES
+        # pdf_path = PDF_CLIENTES
 
     elif rol == "distribuidor":
         templates = templates_distrib
         subjects = subjects_distrib
-        pdf_path = PDF_DISTRIB
+        # pdf_path = PDF_DISTRIB
 
     else:
         novedades.append(f"{nombre}: rol no reconocido ({rol}).")
         continue
 
-    # Validar PDF
-    if not os.path.exists(pdf_path):
-        novedades.append(f"No se encontró el PDF para rol {rol}.")
-        break
+    # # Validar PDF
+    # if not os.path.exists(pdf_path):
+    #     novedades.append(f"No se encontró el PDF para rol {rol}.")
+    #     break
 
     # ------------------------------
     # Crear correo
@@ -147,7 +147,7 @@ for persona in registros:
     mail.To = correo
     mail.Subject = subject
     mail.HTMLBody = html_content
-    mail.Attachments.Add(pdf_path)
+    # mail.Attachments.Add(pdf_path)
     mail.Send()
 
     correos_enviados += 1
@@ -195,7 +195,7 @@ else:
 reporte_texto = "\n".join(reporte)
 
 mail_reporte = outlook.CreateItem(0)
-mail_reporte.To = "nicolasbernal@jdelectricos.com.co"
+mail_reporte.To = "sistemas@jdelectricos.com.co"
 mail_reporte.Subject = "Reporte envío correos"
 mail_reporte.Body = reporte_texto
 mail_reporte.Send()

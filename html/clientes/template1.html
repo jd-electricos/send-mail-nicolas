@@ -35,56 +35,105 @@
 <body>
   <p>Estimado(a) <b>{{ cliente }}</b>,</p>
 
+  <p>Reciban un cordial saludo.</p>
+
   <p>
-    Mi nombre es <b>Nicolás Bernal</b> y es un gusto dirigirme a usted como
-    representante de <b>JD Eléctricos e Industria LTDA</b>, empresa colombiana
-    con más de <b>16 años de experiencia</b> importando y comercializando
-    material eléctrico para <b>baja, media y alta tensión</b>.
+    Con el objetivo de seguir aportando soluciones confiables e innovadoras para
+    el sector eléctrico, nos complace presentar la nueva incorporación a nuestro
+    portafolio:
   </p>
 
-  <p>Durante este tiempo hemos construido una sólida trayectoria ofreciendo:</p>
+  <p style="text-align: center; font-size: 18px; color: #0b3d75">
+    <b>⚡ ESPACIADORES PARA RED ECOLÓGICA EN 15 y 35 kV ⚡</b>
+  </p>
+
+  <p>
+    Diseñados para aplicaciones en sistemas de distribución aérea, nuestros
+    espaciadores ofrecen un excelente desempeño mecánico y eléctrico,
+    contribuyendo a una operación más segura, estable y eficiente de las redes
+    ecológicas.
+  </p>
+
+  <p><b>Principales beneficios:</b></p>
 
   <ul>
-    <li>Amplio portafolio de productos de marcas propias y reconocidas.</li>
+    <li>✔️ Alta resistencia a condiciones ambientales y esfuerzos mecánicos.</li>
+    <li>✔️ Excelente desempeño dieléctrico.</li>
+    <li>✔️ Mayor estabilidad y separación entre conductores.</li>
+    <li>✔️ Fácil instalación y mantenimiento.</li>
     <li>
-      Cobertura nacional con despachos oportunos a cualquier ciudad de Colombia.
+      ✔️ Fabricados con materiales de alta calidad para larga vida útil.
+    </li>
+    <li>✔️ Disponibilidad para aplicaciones en 15 y 35 kV.</li>
+  </ul>
+
+  <p>
+    Nuestro equipo comercial está disponible para brindar información adicional,
+    fichas técnicas y acompañamiento en sus proyectos.
+  </p>
+
+  <p>
+    📩 <b>Contáctenos para conocer disponibilidad y especificaciones.</b>
+  </p>
+
+  <p>
+    También puede consultar más información en nuestra página:
+  </p>
+
+  <ul>
+    <li>
+      <a href="https://www.japs.com.co/espaciadores" target="_blank">
+        Ver categoría de espaciadores
+      </a>
     </li>
     <li>
-      Atención personalizada, enfocada en garantizar soluciones confiables y
-      eficientes.
+      <a
+        href="https://www.japs.com.co/espaciadores/espaciador-polimerico-15-kv"
+        target="_blank"
+      >
+        Ver espaciador polimérico 15 kV
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.japs.com.co/espaciadores/espaciador-polimerico-35-kv"
+        target="_blank"
+      >
+        Ver espaciador polimérico 35 kV
+      </a>
     </li>
   </ul>
 
   <p>
-    Nuestro objetivo es convertirnos en su <b>aliado estratégico</b>,
-    facilitando el proceso de compra de productos eléctricos de calidad que
-    optimicen sus operaciones y proyectos.
-  </p>
-
-  <p>
-    Para ello, adjuntamos nuestro catálogo con el fin de que pueda conocer en
-    detalle el alcance de nuestro portafolio y las soluciones que tenemos para
-    usted.
-  </p>
-
-  <p>
-    Nos encantaría coordinar una <b>reunión o visita comercial</b> para
-    presentarle nuestra empresa y conversar sobre cómo podemos aportar valor a
-    sus necesidades actuales y futuras.
-  </p>
-
-  <p>
-    <b
-      >Quedamos atentos a su confirmación para agendar la visita en la fecha y
-      hora que más le convenga.</b
-    >
+    Agradecemos su confianza y esperamos continuar siendo aliados estratégicos
+    en el desarrollo de sus proyectos eléctricos.
   </p>
 
   <p>
     Cordialmente,<br />
-    <b>Nicolás Bernal</b><br />
-    <b>JD Eléctricos e Industria LTDA</b>
+    <b>{{ asesor }}</b><br />
+    <b>JD Eléctricos e Industria SAS</b>
   </p>
+
+  <div style="text-align: center; margin: 25px 0 20px 0">
+    <a href="https://www.japs.com.co/espaciadores" target="_blank">
+      <img
+        src="https://staging.jdelectricos.com.co/wp-content/uploads/2026/05/promocion-espaciadores.webp"
+        alt="Promoción Espaciadores para Red Ecológica 15 kV y 35 kV"
+        width="650"
+        style="
+          width: 100%;
+          max-width: 650px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          border-radius: 12px;
+          border: 0;
+        "
+      />
+    </a>
+  </div>
+
   <!-- Firma -->
   <div class="firma">
     <img
@@ -95,7 +144,7 @@
     />
     <div>
       <b>{{ asesor }}</b><br />
-      <b>J.D Eléctricos e Industria Ltda.</b><br /><br />
+      <b>J.D Eléctricos e Industria sas.</b><br /><br />
       📧 <b>Email:</b>
       <a href="mailto:{{ correo-asesor }}">{{ correoAsesor }}</a><br />
       📱 <b>Celular:</b> (+57) {{ numeroAsesor }}<br />

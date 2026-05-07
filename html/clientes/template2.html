@@ -7,7 +7,7 @@
   .firma {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; /* Centrado vertical */
     margin-top: 20px;
     background: #fff;
     padding: 15px;
@@ -35,41 +35,106 @@
 <body>
   <p>Estimado(a) <b>{{ cliente }}</b>,</p>
 
+  <p>Esperamos que se encuentre muy bien.</p>
+
   <p>
-    Reciba un cordial saludo. Desde <b>JD Eléctricos e Industria LTDA</b> queremos
-    presentarnos como una empresa especializada en el suministro de material
-    eléctrico para proyectos de <b>baja, media y alta tensión</b>.
+    En <b>JD Eléctricos e Industria SAS</b> seguimos fortaleciendo nuestro
+    portafolio con soluciones pensadas para responder a las necesidades actuales
+    del sector eléctrico, especialmente en proyectos donde la seguridad, la
+    eficiencia y la confiabilidad son fundamentales.
   </p>
 
   <p>
-    Contamos con más de <b>16 años de experiencia</b> en el mercado colombiano,
-    brindando soluciones confiables y oportunas a constructoras, contratistas,
-    industrias y empresas del sector eléctrico.
+    Por eso queremos presentarle nuestros nuevos
+    <b>espaciadores para red ecológica en 15 y 35 kV</b>, desarrollados para
+    apoyar una correcta separación, alineación y estabilidad de los conductores
+    en redes de distribución aérea.
   </p>
 
-  <p>Entre nuestros principales beneficios encontrará:</p>
+  <p style="text-align: center; font-size: 18px; color: #0b3d75">
+    <b>⚡ Espaciadores para redes ecológicas 15 kV y 35 kV ⚡</b>
+  </p>
+
+  <p>
+    Estos productos han sido diseñados para ofrecer un excelente comportamiento
+    frente a condiciones ambientales exigentes, esfuerzos mecánicos y
+    requerimientos eléctricos propios de las redes de media tensión.
+  </p>
+
+  <p><b>Beneficios principales:</b></p>
 
   <ul>
-    <li>Precios competitivos y excelente relación costo-beneficio.</li>
-    <li>Disponibilidad permanente de inventario.</li>
-    <li>Despachos ágiles a nivel nacional.</li>
-    <li>Acompañamiento técnico y asesoría personalizada.</li>
+    <li>✔️ Contribuyen a una mejor separación entre conductores.</li>
+    <li>✔️ Ayudan a mejorar la estabilidad de la red aérea.</li>
+    <li>✔️ Ofrecen alta resistencia mecánica y ambiental.</li>
+    <li>✔️ Presentan excelente desempeño dieléctrico.</li>
+    <li>✔️ Facilitan procesos de instalación y mantenimiento.</li>
+    <li>✔️ Disponibles para aplicaciones en 15 kV y 35 kV.</li>
   </ul>
 
   <p>
-    Nos gustaría tener la oportunidad de cotizar sus próximos requerimientos y
-    demostrarle por qué somos un proveedor confiable para múltiples empresas del sector.
+    Nuestro equipo comercial se encuentra disponible para compartirle mayor
+    información, disponibilidad, especificaciones técnicas y acompañarlo en la
+    selección del producto más adecuado para sus proyectos.
   </p>
 
   <p>
-    <b>Quedamos atentos a su respuesta para iniciar una relación comercial exitosa.</b>
+    Puede conocer más sobre esta línea en los siguientes enlaces:
+  </p>
+
+  <ul>
+    <li>
+      <a href="https://www.japs.com.co/espaciadores" target="_blank">
+        Categoría de espaciadores
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.japs.com.co/espaciadores/espaciador-polimerico-15-kv"
+        target="_blank"
+      >
+        Espaciador polimérico 15 kV
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.japs.com.co/espaciadores/espaciador-polimerico-35-kv"
+        target="_blank"
+      >
+        Espaciador polimérico 35 kV
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    Quedamos atentos para brindarle asesoría personalizada y apoyar sus próximos
+    desarrollos eléctricos con soluciones confiables y de calidad.
   </p>
 
   <p>
     Cordialmente,<br />
-    <b>Nicolás Bernal</b><br />
-    <b>JD Eléctricos e Industria LTDA</b>
+    <b>{{ asesor }}</b><br />
+    <b>JD Eléctricos e Industria SAS</b>
   </p>
+
+  <div style="text-align: center; margin: 25px 0 20px 0">
+    <a href="https://www.japs.com.co/espaciadores" target="_blank">
+      <img
+        src="https://staging.jdelectricos.com.co/wp-content/uploads/2026/05/promocion-espaciadores.webp"
+        alt="Espaciadores para red ecológica 15 kV y 35 kV"
+        width="650"
+        style="
+          width: 100%;
+          max-width: 650px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          border-radius: 12px;
+          border: 0;
+        "
+      />
+    </a>
+  </div>
 
   <!-- Firma -->
   <div class="firma">
@@ -81,7 +146,7 @@
     />
     <div>
       <b>{{ asesor }}</b><br />
-      <b>J.D Eléctricos e Industria Ltda.</b><br /><br />
+      <b>J.D Eléctricos e Industria sas.</b><br /><br />
       📧 <b>Email:</b>
       <a href="mailto:{{ correo-asesor }}">{{ correoAsesor }}</a><br />
       📱 <b>Celular:</b> (+57) {{ numeroAsesor }}<br />
@@ -90,11 +155,11 @@
       Carrera 12 # 15-95, Ofc 506<br />
       Bogotá - Colombia<br /><br />
       🌐 <b>Sitios web:</b><br />
-      <a href="http://www.jdelectricos.com.co/">www.jdelectricos.com.co</a><br />
+      <a href="http://www.jdelectricos.com.co/">www.jdelectricos.com.co</a
+      ><br />
       <a href="http://www.japs.com.co/">www.japs.com.co</a>
     </div>
   </div>
-
   <p class="eco">
     <b>¡Hazlo por el planeta! Antes de imprimir, considera si es esencial.</b>
   </p>

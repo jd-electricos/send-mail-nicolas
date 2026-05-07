@@ -7,7 +7,7 @@
   .firma {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: center; /* Centrado vertical */
     margin-top: 20px;
     background: #fff;
     padding: 15px;
@@ -35,36 +35,105 @@
 <body>
   <p>Estimado(a) <b>{{ cliente }}</b>,</p>
 
+  <p>Reciba un cordial saludo de parte de nuestro equipo comercial.</p>
+
   <p>
-    Espero se encuentre muy bien. Me permito dar seguimiento a nuestro contacto
-    anterior para reiterarle nuestro interés en convertirnos en su proveedor de
-    confianza en material eléctrico.
+    Queremos compartirle una novedad importante dentro de nuestro portafolio
+    JAPS: la disponibilidad de <b>espaciadores poliméricos para red ecológica</b>,
+    una solución diseñada para apoyar proyectos de distribución aérea en media
+    tensión.
+  </p>
+
+  <p style="text-align: center; font-size: 18px; color: #0b3d75">
+    <b>⚡ Nuevos espaciadores para red ecológica 15 kV y 35 kV ⚡</b>
   </p>
 
   <p>
-    En <b>JD Eléctricos e Industria LTDA</b> trabajamos continuamente para ofrecer
-    productos de alta calidad, precios competitivos y tiempos de entrega eficientes.
+    Estos espaciadores están orientados a brindar mayor seguridad, orden y
+    estabilidad en la instalación de conductores, ayudando a mantener una
+    separación adecuada y contribuyendo al buen desempeño operativo de la red.
   </p>
 
   <p>
-    Queremos apoyarle en sus proyectos actuales y futuros, brindándole respaldo,
-    disponibilidad y asesoría especializada en cada requerimiento.
+    Gracias a su diseño y materiales de alta calidad, son una alternativa
+    confiable para empresas, contratistas y proyectos que requieren soluciones
+    eficientes en redes eléctricas de distribución.
+  </p>
+
+  <p><b>Características destacadas:</b></p>
+
+  <ul>
+    <li>✔️ Aptos para aplicaciones en redes ecológicas de 15 kV y 35 kV.</li>
+    <li>✔️ Buena resistencia frente a condiciones ambientales exigentes.</li>
+    <li>✔️ Diseño funcional para separación y soporte de conductores.</li>
+    <li>✔️ Excelente comportamiento eléctrico y mecánico.</li>
+    <li>✔️ Solución práctica para instalación en sistemas de distribución aérea.</li>
+    <li>✔️ Fabricados para ofrecer durabilidad y confiabilidad en operación.</li>
+  </ul>
+
+  <p>
+    Si actualmente desarrolla proyectos relacionados con redes de media tensión,
+    nuestro equipo puede apoyarlo con información técnica, disponibilidad y
+    asesoría comercial para seleccionar la referencia adecuada.
   </p>
 
   <p>
-    Si lo considera oportuno, podemos agendar una breve reunión virtual o presencial
-    para conocer sus necesidades y presentarle nuestras soluciones.
+    Consulte los productos disponibles en nuestra página:
+  </p>
+
+  <ul>
+    <li>
+      <a href="https://www.japs.com.co/espaciadores" target="_blank">
+        Ver línea de espaciadores
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.japs.com.co/espaciadores/espaciador-polimerico-15-kv"
+        target="_blank"
+      >
+        Espaciador polimérico para 15 kV
+      </a>
+    </li>
+    <li>
+      <a
+        href="https://www.japs.com.co/espaciadores/espaciador-polimerico-35-kv"
+        target="_blank"
+      >
+        Espaciador polimérico para 35 kV
+      </a>
+    </li>
+  </ul>
+
+  <p>
+    Será un gusto atender sus requerimientos y seguir acompañando sus proyectos
+    con productos confiables para el sector eléctrico colombiano.
   </p>
 
   <p>
-    <b>Quedo atento(a) a su amable respuesta.</b>
+    Cordialmente,<br />
+    <b>{{ asesor }}</b><br />
+    <b>JD Eléctricos e Industria SAS</b>
   </p>
 
-  <p>
-    Cordial saludo,<br />
-    <b>Nicolás Bernal</b><br />
-    <b>JD Eléctricos e Industria LTDA</b>
-  </p>
+  <div style="text-align: center; margin: 25px 0 20px 0">
+    <a href="https://www.japs.com.co/espaciadores" target="_blank">
+      <img
+        src="https://staging.jdelectricos.com.co/wp-content/uploads/2026/05/promocion-espaciadores.webp"
+        alt="Nuevos espaciadores poliméricos para red ecológica"
+        width="650"
+        style="
+          width: 100%;
+          max-width: 650px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+          border-radius: 12px;
+          border: 0;
+        "
+      />
+    </a>
+  </div>
 
   <!-- Firma -->
   <div class="firma">
@@ -76,7 +145,7 @@
     />
     <div>
       <b>{{ asesor }}</b><br />
-      <b>J.D Eléctricos e Industria Ltda.</b><br /><br />
+      <b>J.D Eléctricos e Industria sas.</b><br /><br />
       📧 <b>Email:</b>
       <a href="mailto:{{ correo-asesor }}">{{ correoAsesor }}</a><br />
       📱 <b>Celular:</b> (+57) {{ numeroAsesor }}<br />
@@ -85,11 +154,11 @@
       Carrera 12 # 15-95, Ofc 506<br />
       Bogotá - Colombia<br /><br />
       🌐 <b>Sitios web:</b><br />
-      <a href="http://www.jdelectricos.com.co/">www.jdelectricos.com.co</a><br />
+      <a href="http://www.jdelectricos.com.co/">www.jdelectricos.com.co</a
+      ><br />
       <a href="http://www.japs.com.co/">www.japs.com.co</a>
     </div>
   </div>
-
   <p class="eco">
     <b>¡Hazlo por el planeta! Antes de imprimir, considera si es esencial.</b>
   </p>
